@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:5173/# -->
+<html lang="en" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <script type="module" src="./dastresi_files/client"></script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dastresi_files/output.css">
+
+    <link rel="shortcut icon" href="http://localhost:5173/src/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dastresi_files/font-awesome.min.css">
+    <title>dastresi</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <!-- #region header-->
+    <div class="max-w-full h-30 mt-2 ml-5 mr-5 flex flex-col justify-center content-center fixed top-0 left-0 right-0 z-50 border-b border-b-stone-400 bg-white [@media(max-width:900px)]:hidden">
+      <div class="header-top w-screen h-20 flex items-center gap-8">
+        <img class="w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-12 mr-5" src="./dastresi_files/logo.png" alt="logo">
+        <label for="search" class="w-60 h-11 bg-gray-100 inset-shadow-sm inset-shadow-black-700 rounded-2xl p-2 mt-2 flex items-center cursor-pointer gap-3"><i class="fa fa-search text-[#a0a3a8]" aria-hidden="true"></i><span class="text-[#555759] font-shabnam">
+            جستجو محصولات</span></label>
+        <input type="radio" name="search" id="search" class="header-search-input hidden" placeholder="جستجو">
+        <input type="radio" name="search" id="close" class="hidden checked:block">
+        <div class="cover max-w-full h-full fixed top-0 left-0 right-0 bg-[#545353] bg-opacity-50 z-40 hidden peer-checked:block"></div>
+        <div class="search w-full h-20 fixed top-0 left-0 right-0 bg-white z-50 hidden peer-checked:block">
+          <div class="searching"></div>
+
+          <label for="close" class="inline-block w-10 h-10 absolute right-0 top-0 align-middle size-8 bg-white cursor-pointer perr-checked:hidden">×</label>
+        </div>
+        <div class="muneu flex gap-7 max-w-100 [@media(max-width:900px)]:hidden">
+          <a href="http://localhost:5173/#" class="block h-10 align-middle pt-2 opacity-50 hover:opacity-100">باشگاه مشتریان</a>
+          <a href="http://localhost:5173/#" class="block h-10 align-middle pt-2 opacity-50 hover:opacity-100">
+            بلاگ</a>
+          <a href="http://localhost:5173/#" class="block h-10 align-middle pt-2 opacity-50 hover:opacity-100">
+            درباره ما</a>
+          <a href="http://localhost:5173/#" class="block h-10 align-middle pt-2 opacity-50 hover:opacity-100">
+            ارتباط ما</a>
+        </div>
+        <div class="w-10 h-10 bg-[#F7F8FA] rounded-md absolute left-30 flex items-center justify-center shadow-xl/20 hover:bg-[#fe5f56]">
+          <div class="flex items-center justify-center">
+            <i class="fa fa-shopping-cart fa-6" aria-hidden="true"></i>
+          </div>
+        </div>
+        <a href="http://localhost:5173/#" class="max-w-25 h-10 leading-6 rounded-xl p-2 pr-2 align-middle absolute left-2 text-sm text-white bg-[#0B5ABD] hover:bg-[#0B295A]">ورود و ثبت نام
+        </a>
+      </div>
+      <div class="header-bottom w-screen h-15 flex gap-12 [@media(max-width:900px)]:hidden">
+        <!-- menu items -->
+        <a href="http://localhost:5173/#" class="group text-sm text-black mr-5 block mt-7 relative overflow-visible opacity-70 hover:text-red-600">خانه
+          <div class="absolute w-0 h-1 opacity-60 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:max-w-full"></div>
+        </a>
+
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">لوازم جانبی موبایل و کامپیوتر
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-100 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>کابل شارژ</li>
+              <li>آداپتور و شارژر</li>
+              <li>پاوربانک و جامپ استارتر</li>
+              <li>هندزفری و هدست، میکروفون</li>
+              <li>هولدر و نگهدارنده</li>
+              <li>تجهیزات ذخیره سازی</li>
+              <li>اسپیکر</li>
+              <li>ماوس و کیبورد و پدموس</li>
+              <li>دسته بازی و خنک کننده موبایل</li>
+              <li>انواع تبدیل برق</li>
+              <li>ماوس و کیبورد و پدموس</li>
+              <li>دسته بازی و خنک کننده موبایل</li>
+              <li>انواع تبدیل برق</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">کابل - مبدل - رابط
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-80 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>کابل HDMI</li>
+              <li>کابل پرینتر</li>
+              <li>کابل هارد اکسترنال</li>
+              <li>انواع رابط و تبدیل</li>
+              <li>کابل AUX</li>
+              <li>کابل 2 به 1 صدا</li>
+              <li>کابل اپتیکال</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">لوازم تولید محتوا
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-25 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>میکروفون</li>
+              <li>رینگ لایت و پایه</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">لوازم شبکه
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-50 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>مودم - روتر</li>
+              <li>هاب شبکه</li>
+              <li>مودم همراه</li>
+              <li>لوازم جانبی</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">کنسول بازی و لوازم جانبی
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-50 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>هندزفری و هدست</li>
+              <li>دسته بازی</li>
+              <li>موس و کیبورد</li>
+              <li>کیف</li>
+              <li>کنسول</li>
+              <li>شارژر دسته بازی</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">لوازم خانگی و شخصی
+
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute right-0 top-8 w-70 h-80 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll">
+            <ul class="p-3 text-black text-sm leading-10">
+              <li>باتری و شارژر</li>
+              <li>انواع گجت های جذاب</li>
+              <li>اندروید باکس و گیرنده دیجیتال</li>
+              <li>آنتن رومیزی</li>
+              <li>مچ بند و ساعت هوشمند</li>
+              <li>محصولات کمبو</li>
+              <li>رابط برق و USB</li>
+              <li>اف ام پلیر</li>
+            </ul>
+          </div>
+        </a>
+        <a href="http://localhost:5173/#" class="group w-fit h-8 text-sm opacity-60 text-black mr-5 block mt-7 relative overflow-visible hover:text-red-600">برند ها
+          <div class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
+          <div class="submenue hidden absolute left-0 top-8 w-290 h-76 bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 -z-50 group-hover:block overflow-scroll rounded-b mb-2">
+            <ul class="text-black font-bold text-xs leading-10 grid grid-cols-5 gap-y-2">
+              <ul>
+                <ul class="border-l-1 border-b-1 border-stone-300 pl-2 pr-2">
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>سامسونگ</span>
+                    <span>samsung</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>اپل</span>
+                    <span>apple</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>شیائومی</span>
+                    <span>xiaomi</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>نوکیا</span>
+                    <span>nokia</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>هواوی</span>
+                    <span>huawei</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>آنر</span>
+                    <span>honor</span>
+                  </li>
+                </ul>
+                <li class="text-red-600">بیشتر...</li>
+              </ul>
+
+              <ul>
+                <ul class="border-l-1 border-b-1 border-stone-300 pl-2 pr-2">
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ال جی</span>
+                    <span>lg</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ایسوس</span>
+                    <span>asus</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ایفون</span>
+                    <span>iphone</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>رنوو</span>
+                    <span>lenovo</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ام اس آی</span>
+                    <span>msi</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>اچ تی سی</span>
+                    <span>htc</span>
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <ul class="border-l-1 border-b-1 border-stone-300 pl-2 pr-2">
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>سامسونگ</span>
+                    <span>samsung</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>اپل</span>
+                    <span>apple</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>شیائومی</span>
+                    <span>xiaomi</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>نوکیا</span>
+                    <span>nokia</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>هواوی</span>
+                    <span>huawei</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>آنر</span>
+                    <span>honor</span>
+                  </li>
+                </ul>
+              </ul>
+
+              <ul>
+                <ul class="border-l-1 border-b-1 border-stone-300 pl-2 pr-2">
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ال جی</span>
+                    <span>lg</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ایسوس</span>
+                    <span>asus</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ایفون</span>
+                    <span>iphone</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>رنوو</span>
+                    <span>lenovo</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>ام اس آی</span>
+                    <span>msi</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>اچ تی سی</span>
+                    <span>htc</span>
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <ul class="border-b-1 border-stone-300 pl-2 pr-2">
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>سامسونگ</span>
+                    <span>samsung</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>اپل</span>
+                    <span>apple</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>شیائومی</span>
+                    <span>xiaomi</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>نوکیا</span>
+                    <span>nokia</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>هواوی</span>
+                    <span>huawei</span>
+                  </li>
+                  <li class="flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700">
+                    <span>آنر</span>
+                    <span>honor</span>
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--header mobile-->
+    <div class="max-w-full h-20 flex flex-col justify-center content-center fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] [@media(min-width:900px)]:hidden">
+      <div class="peer mr-6 flex items-center h-20">
+        <label for="mobile-menu-toggle" class="p-2 cursor-pointer">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <input id="mobile-menu-toggle" type="checkbox" class="peer sr-only">
+
+        <div class="submenue hidden peer-checked:block absolute right-0 top-0 w-[280px] h-screen bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 z-[90] overflow-scroll">
+          <ul class="p-3 text-black text-sm leading-10">
+            <li class="h-30">
+              <img class="w-40 h-20 mr-10 mt-3 align-middle justify-center flex" src="./dastresi_files/logo.png" alt="logo">
+            </li>
+            <li class="flex border-b-1 border-t-1 justify-around">
+              <span class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100">باشگاه مشتریان</span>
+              <span class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100">بلاگ</span>
+              <span class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100">
+                درباره ما</span>
+              <span class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100">
+                ارتباط ما</span>
+            </li>
+            <li class="relative flex">
+              <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+              <input id="submenu-toggle-1" type="checkbox" class="peer sr-only">
+              <label for="submenu-toggle-1" class="flex h-8 p-3 text-2xl cursor-pointer">first</label>
+
+              <div class="hidden peer-checked:block absolute top-full right-0 mt-2 w-[100%] h-[300px] bg-gray-200 z-[100] overflow-auto rounded-lg shadow-lg">
+                <ul class="p-3 text-black text-sm leading-10">
+                  <li>کابل شارژ</li>
+                  <li>آداپتور و شارژر</li>
+                  <li>پاوربانک و جامپ استارتر</li>
+                  <li>هندزفری و هدست، میکروفون</li>
+                  <li>هولدر و نگهدارنده</li>
+                  <li>تجهیزات ذخیره سازی</li>
+                  <li>اسپیکر</li>
+                  <li>ماوس و کیبورد و پدموس</li>
+                  <li>دسته بازی و خنک کننده موبایل</li>
+                  <li>انواع تبدیل برق</li>
+                  <li>ماوس و کیبورد و پدموس</li>
+                  <li>دسته بازی و خنک کننده موبایل</li>
+                  <li>انواع تبدیل برق</li>
+                </ul>
+              </div>
+            </li>
+                        <li class="relative flex">
+              <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+              <input id="submenu-toggle-1" type="checkbox" class="peer sr-only">
+              <label for="submenu-toggle-1" class="flex h-8 p-3 text-2xl cursor-pointer">first</label>
+
+              <div class="hidden peer-checked:block absolute top-100 right-0 mt-2 w-[100%] h-[300px] bg-gray-200 z-[100] overflow-auto rounded-lg shadow-lg">
+                <ul class="p-3 text-black text-sm leading-10">
+                  <li>کابل شارژ</li>
+                  <li>آداپتور و شارژر</li>
+                  <li>پاوربانک و جامپ استارتر</li>
+                  <li>هندزفری و هدست، میکروفون</li>
+                  <li>هولدر و نگهدارنده</li>
+                  <li>تجهیزات ذخیره سازی</li>
+                  <li>اسپیکر</li>
+                  <li>ماوس و کیبورد و پدموس</li>
+                  <li>دسته بازی و خنک کننده موبایل</li>
+                  <li>انواع تبدیل برق</li>
+                  <li>ماوس و کیبورد و پدموس</li>
+                  <li>دسته بازی و خنک کننده موبایل</li>
+                  <li>انواع تبدیل برق</li>
+                </ul>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <img class="w-16 h-8 mr-5" src="./dastresi_files/logo.png" alt="logo">
+      </div>
+    </div>
+    <!-- #endregion header-->
+
+    <script src="./dastresi_files/main.js"></script>
+  
+
+</body></html>

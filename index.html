@@ -1,0 +1,2848 @@
+<!doctype html>
+<html lang="en" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/images/icon/favicon3.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <title>فروشگاه اینترنتی دسترسی</title>
+  </head>
+  <body onload="startTime()" class="max-w-360 mx-auto bg-[#FAFAFA]">
+    <h1 id="top"></h1>
+
+    <!-- #region header-->
+    <div
+      class="max-w-360 h-33 mx-auto pt-4 flex flex-col justify-center content-center fixed left-0 right-0 top-0 z-50 shadow bg-white px-2 [@media(max-width:1024px)]:hidden"
+    >
+      <div class="max-w-7xl h-full flex flex-col">
+        <div
+          class="header-top h-20 flex items-center gap-8 [@media(min-width:1200px)]:px-20"
+        >
+          <img
+            class="w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-12"
+            src="./src/images/header/logo.png"
+            alt="logo"
+          />
+          <label
+            for="search"
+            class="w-60 h-11 bg-gray-100 inset-shadow-sm inset-shadow-black-700 rounded-2xl p-2 mt-2 flex items-center cursor-pointer gap-3"
+            ><i class="fa fa-search text-[#a0a3a8]" aria-hidden="true"></i
+            ><span class="text-[#555759] font-shabnam">
+              جستجو محصولات</span
+            ></label
+          >
+          <input
+            type="radio"
+            name="search"
+            id="search"
+            class="header-search-input hidden"
+            placeholder="جستجو"
+          />
+          <input
+            type="radio"
+            name="search"
+            id="close"
+            class="hidden checked:block"
+          />
+          <div
+            class="cover max-w-full h-full fixed top-0 left-0 right-0 bg-[#545353] bg-opacity-50 z-40 hidden peer-checked:block"
+          ></div>
+          <div
+            class="search w-full h-20 fixed top-0 left-0 right-0 bg-white z-50 hidden peer-checked:block"
+          >
+            <div class="searching"></div>
+
+            <label
+              for="close"
+              class="inline-block w-10 h-10 absolute right-0 top-0 align-middle size-8 bg-white cursor-pointer perr-checked:hidden"
+              >&times;</label
+            >
+          </div>
+          <div
+            class="muneu flex gap-7 max-w-100 [@media(max-width:900px)]:hidden"
+          >
+            <a
+              href="./costumers.html"
+              class="block h-10 align-middle lg:text-[16px] md:text-sm pt-2 opacity-50 hover:opacity-100"
+              >باشگاه مشتریان</a
+            >
+            <a
+              href="./blog.html"
+              class="block h-10 align-middle lg:text-[16px] md:text-sm pt-2 opacity-50 hover:opacity-100"
+            >
+              بلاگ</a
+            >
+            <a
+              href="./about.html"
+              class="block h-10 align-middle lg:text-[16px] md:text-sm pt-2 opacity-50 hover:opacity-100"
+            >
+              درباره ما</a
+            >
+            <a
+              href="./contact.html"
+              class="block h-10 align-middle lg:text-[16px] md:text-sm pt-2 opacity-50 hover:opacity-100"
+            >
+              ارتباط ما</a
+            >
+          </div>
+
+          <div
+            class="flex gap-3 absolute left-20 [@media(max-width:1200px)]:left-3"
+          >
+            <input type="checkbox" id="dark-mode-toggle" class="hidden peer" />
+            <label
+              for="dark-mode-toggle"
+              class="w-10 h-10 bg-[#F7F8FA] border-[#e2e8f0] rounded-md flex items-center justify-center shadow hover:bg-gray-300 cursor-pointer transition-all"
+              title="Dark Mode"
+            >
+              <i
+                class="fa fa-moon-o text-gray-700 peer-checked:hidden"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa fa-sun-o text-yellow-500 hidden peer-checked:inline"
+                aria-hidden="true"
+              ></i>
+            </label>
+          </div>
+          <div
+            class="w-10 h-10 bg-[#F7F8FA] border-[#e2e8f0] rounded-md absolute left-61 flex items-center justify-center shadow hover:bg-[#6f6f6f] [@media(max-width:1200px)]:left-41"
+          >
+            <div class="flex items-center justify-center">
+              <img
+                src="./src/images/trolley_6337212.png"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+          <a
+            href="./login.html"
+            class="max-w-25 h-10 leading-6 rounded-xl p-2 pr-2 align-middle absolute left-33 text-sm text-white bg-[#0B5ABD] hover:bg-[#0B295A] [@media(max-width:1200px)]:left-15 "
+            >ورود و ثبت نام
+          </a>
+        </div>
+
+        <div
+          class="header-bottom w-full absolute bottom-0 h-15 flex justify-around [@media(max-width:900px)]:hidden [@media(min-width:1200px)]:px-20"
+        >
+          <!-- menu items -->
+          <a
+            href="./index.html"
+            class="group 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] text-[#757575] block mt-7 relative overflow-visible hover:text-red-600"
+            >خانه
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+          </a>
+
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >لوازم جانبی موبایل و کامپیوتر
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute right-0 top-8.5 w-70 h-screen bg-[#ffffff] shadow-md transition duration-300 -z-50 group-hover:block overflow-scroll"
+            >
+              <ul class="text-[#626262] text-xs leading-10 pt-3">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل شارژ
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  آداپتور و شارژر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  پاوربانک و جامپ استارتر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  هندزفری و هدست، میکروفون
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  هولدر و نگهدارنده
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  تجهیزات ذخیره سازی
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  اسپیکر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  ماوس و کیبورد و پدموس
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  دسته بازی و خنک کننده موبایل
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  انواع تبدیل برق
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  ماوس و کیبورد و پدموس
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  دسته بازی و خنک کننده موبایل
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  انواع تبدیل برق
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  هولدر و نگهدارنده
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  تجهیزات ذخیره سازی
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  اسپیکر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  ماوس و کیبورد و پدموس
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  دسته بازی و خنک کننده موبایل
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >کابل - مبدل - رابط
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute right-0 top-8.5 w-70 h-80 bg-[#ffffff] shadow-md transition duration-300 -z-50 group-hover:block overflow-scroll"
+            >
+              <ul class="pt-3 text-[#626262] text-xs leading-10">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل HDMI
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل پرینتر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل هارد اکسترنال
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  انواع رابط و تبدیل
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل AUX
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل 2 به 1 صدا
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کابل اپتیکال
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >لوازم تولید محتوا
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute right-0 top-8.5 w-70 h-25 bg-[#ffffff] shadow-md transition duration-300 -z-50 group-hover:block overflow-scroll"
+            >
+              <ul class="pt-3 text-[#626262] text-xs leading-10">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  میکروفون
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  رینگ لایت و پایه
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >لوازم شبکه
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute right-0 top-8.5 w-70 h-50 bg-[#ffffff] shadow-md transition duration-300 -z-50 group-hover:block overflow-scroll"
+            >
+              <ul class="pt-3 text-[#626262] text-xs leading-10">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  مودم - روتر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  هاب شبکه
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  مودم همراه
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  لوازم جانبی
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] opacity-100 text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >کنسول بازی و لوازم جانبی
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute right-0 top-8.5 w-70 h-50 bg-[#ffffff] shadow-md transition duration-300 -z-50 group-hover:block overflow-scroll"
+            >
+              <ul class="pt-3 text-[#626262] text-xs leading-10">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  هندزفری و هدست
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  دسته بازی
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  موس و کیبورد
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کیف
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  کنسول
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  شارژر دسته بازی
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] opacity-100 text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >لوازم خانگی و شخصی
+
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute left-0 top-8.5 w-60 h-80 bg-[#ffffff] shadow-md transition duration-300 z-100 group-hover:block overflow-scroll"
+            >
+              <ul class="pt-3 text-[#626262] text-xs leading-10">
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  باتری و شارژر
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  انواع گجت های جذاب
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  اندروید باکس و گیرنده دیجیتال
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  آنتن رومیزی
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  مچ بند و ساعت هوشمند
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  محصولات کمبو
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  رابط برق و USB
+                </li>
+                <li
+                  class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                >
+                  اف ام پلیر
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group w-fit h-8 2xl:txt-sm xl:text-sm lg:text-xs md:text-[11px] sm:text-[9px] opacity-100 text-[#757575] mr-5 block mt-7 relative overflow-visible hover:text-red-600"
+            >برند ها
+            <div
+              class="absolute w-0 h-1 bg-[#ec0a0a] bottom-0 left-0 transition-all duration-300 group-hover:w-full"
+            ></div>
+            <div
+              class="submenue hidden absolute left-0 top-8.5 w-screen pr-5 [@media(min-width:1200px)]:pr-50 h-76 transition duration-300 -z-50 group-hover:block overflow-scroll mb-2"
+            >
+              <ul
+                class="pt-3 text-[#626262] text-xs w-full mx-auto bg-[#ffffff] shadow-md leading-10 grid grid-cols-5 gap-y-2"
+              >
+                <ul>
+                  <ul class="border-l border-b border-stone-300">
+                    <li
+                      class="w-full px-3 box-border flex justify-between transition duration-300 hover:bg-gray-200 hover:text-blue-700"
+                    >
+                      <span>سامسونگ</span>
+                      <span>samsung</span>
+                    </li>
+                    <li
+                      class="w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700 flex justify-between transition duration-300"
+                    >
+                      <span>اپل</span>
+                      <span>apple</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>شیائومی</span>
+                      <span>xiaomi</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>نوکیا</span>
+                      <span>nokia</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>هواوی</span>
+                      <span>huawei</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>آنر</span>
+                      <span>honor</span>
+                    </li>
+                  </ul>
+                  <li class="text-red-600">بیشتر...</li>
+                </ul>
+
+                <ul>
+                  <ul class="border-l border-b border-stone-300">
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ال جی</span>
+                      <span>lg</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ایسوس</span>
+                      <span>asus</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ایفون</span>
+                      <span>iphone</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>رنوو</span>
+                      <span>lenovo</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ام اس آی</span>
+                      <span>msi</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>اچ تی سی</span>
+                      <span>htc</span>
+                    </li>
+                  </ul>
+                </ul>
+                <ul>
+                  <ul class="border-l border-b border-stone-300">
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>سامسونگ</span>
+                      <span>samsung</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>اپل</span>
+                      <span>apple</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>شیائومی</span>
+                      <span>xiaomi</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>نوکیا</span>
+                      <span>nokia</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>هواوی</span>
+                      <span>huawei</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>آنر</span>
+                      <span>honor</span>
+                    </li>
+                  </ul>
+                </ul>
+
+                <ul>
+                  <ul class="border-l border-b border-stone-300">
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ال جی</span>
+                      <span>lg</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ایسوس</span>
+                      <span>asus</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ایفون</span>
+                      <span>iphone</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>رنوو</span>
+                      <span>lenovo</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>ام اس آی</span>
+                      <span>msi</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>اچ تی سی</span>
+                      <span>htc</span>
+                    </li>
+                  </ul>
+                </ul>
+                <ul>
+                  <ul class="border-b border-stone-300">
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>سامسونگ</span>
+                      <span>samsung</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>اپل</span>
+                      <span>apple</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>شیائومی</span>
+                      <span>xiaomi</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>نوکیا</span>
+                      <span>nokia</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>هواوی</span>
+                      <span>huawei</span>
+                    </li>
+                    <li
+                      class="flex justify-between transition duration-300 w-full px-3 box-border hover:bg-[#F3F4F6] hover:text-blue-700"
+                    >
+                      <span>آنر</span>
+                      <span>honor</span>
+                    </li>
+                  </ul>
+                </ul>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--header mobile-->
+    <div
+      class="max-w-full h-14 flex flex-col justify-center content-center fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] [@media(min-width:1024px)]:hidden"
+    >
+      <div class="peer mr-6 flex items-center h-20 justify-between">
+        <div class="flex justify-center">
+          <label for="mobile-menu-toggle" class="p-2 cursor-pointer">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <input id="mobile-menu-toggle" type="checkbox" class="peer sr-only" />
+
+          <div
+            class="submenue hidden peer-checked:block absolute right-0 top-0 w-70 h-screen bg-[#ffffff] shadow-[0_0_25px_rgba(43,43,43,1)] transition duration-300 z-90 overflow-scroll"
+          >
+            <ul class="p-3 text-black text-sm leading-10">
+              <li class="h-30">
+                <img
+                  class="w-40 h-20 mr-10 mt-3 align-middle justify-center flex"
+                  src="./src/images/header/logo.png"
+                  alt="logo"
+                />
+              </li>
+              <li class="flex border-b border-t justify-around">
+                <a
+                  href="./costumers.html"
+                  class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100"
+                  >باشگاه مشتریان</a
+                >
+                <a
+                  href="./blog.html"
+                  class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100"
+                  >بلاگ</a
+                >
+                <a
+                  href="./about.html"
+                  class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100"
+                >
+                  درباره ما</a
+                >
+                <a
+                  href="./contact.html"
+                  class="block h-10 text-xs pt-2 opacity-50 hover:opacity-100"
+                >
+                  ارتباط ما</a
+                >
+              </li>
+              <div
+                class="h-80 overflow-auto scrollbar scrollbar-thumb-red-500 scrollbar-track-gray-200 scrollbar-thin"
+              >
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-1"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-1"
+                    class="flex p-3 text-lg cursor-pointer"
+                  >
+                    لوازم جانبی موبایل و کامپیوتر</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-75 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>کابل شارژ</li>
+                      <li>آداپتور و شارژر</li>
+                      <li>پاوربانک و جامپ استارتر</li>
+                      <li>هندزفری و هدست، میکروفون</li>
+                      <li>هولدر و نگهدارنده</li>
+                      <li>تجهیزات ذخیره سازی</li>
+                      <li>اسپیکر</li>
+                      <li>ماوس و کیبورد و پدموس</li>
+                      <li>دسته بازی و خنک کننده موبایل</li>
+                      <li>انواع تبدیل برق</li>
+                      <li>ماوس و کیبورد و پدموس</li>
+                      <li>دسته بازی و خنک کننده موبایل</li>
+                      <li>انواع تبدیل برق</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-2"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-2"
+                    class="flex p-3 text-xl cursor-pointer"
+                  >
+                    کابل - مبدل - رابط</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-50 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>کابل HDMI</li>
+                      <li>کابل پرینتر</li>
+                      <li>کابل هارد اکسترنال</li>
+                      <li>انواع رابط و تبدیل</li>
+                      <li>کابل AUX</li>
+                      <li>کابل 2 به 1 صدا</li>
+                      <li>کابل اپتیکال</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-3"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-3"
+                    class="flex p-3 text-xl cursor-pointer"
+                  >
+                    لوازم تولید محتوا</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-25 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>میکروفون</li>
+                      <li>رینگ لایت و پایه</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-4"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-4"
+                    class="flex p-3 text-xl cursor-pointer"
+                  >
+                    لوازم شبکه</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-50 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>مودم - روتر</li>
+                      <li>هاب شبکه</li>
+                      <li>مودم همراه</li>
+                      <li>لوازم جانبی</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-5"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-5"
+                    class="flex p-3 text-xl cursor-pointer"
+                  >
+                    کنسول بازی و لوازم جانبی</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-50 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>هندزفری و هدست</li>
+                      <li>دسته بازی</li>
+                      <li>موس و کیبورد</li>
+                      <li>کیف</li>
+                      <li>کنسول</li>
+                      <li>شارژر دسته بازی</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-6"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-6"
+                    class="flex p-3 text-xl cursor-pointer"
+                  >
+                    لوازم خانگی و شخصی</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-37.5 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>کابل HDMI</li>
+                      <li>کابل پرینتر</li>
+                      <li>کابل هارد اکسترنال</li>
+                      <li>انواع رابط و تبدیل</li>
+                      <li>کابل AUX</li>
+                      <li>کابل 2 به 1 صدا</li>
+                      <li>کابل اپتیکال</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative flex h-fit">
+                  <!-- Submenu toggle (checkbox peer): clicking the label toggles the submenu -->
+                  <input
+                    id="submenu-toggle-7"
+                    type="checkbox"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="submenu-toggle-7"
+                    class="flex p-3 text-xl cursor-pointer"
+                    >برند ها</label
+                  >
+
+                  <div
+                    class="hidden peer-checked:block absolute top-full right-0 mt-2 w-full h-75 bg-gray-200 z-100 overflow-auto rounded-lg shadow-lg"
+                  >
+                    <ul class="p-3 text-black text-sm leading-10">
+                      <li>apple | اپل</li>
+                      <li>samsung | سامسونگ</li>
+                      <li>مکسل | Maxell</li>
+                      <li>وان مور | 1more</li>
+                      <li>جی پی | GP</li>
+                      <li>هایلو | Haylou</li>
+                      <li>اسکال کندی | SkullCandy</li>
+                      <li>apple | اپل</li>
+                      <li>samsung | سامسونگ</li>
+                      <li>مکسل | Maxell</li>
+                      <li>وان مور | 1more</li>
+                      <li>جی پی | GP</li>
+                      <li>هایلو | Haylou</li>
+                      <li>اسکال کندی | SkullCandy</li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+              <li>
+                <a
+                  href="#"
+                  class="block h-10 leading-6 rounded-xl p-2 pr-2 align-middle text-md text-white bg-[#0B295A] hover:text-black m-3 text-center mt-20"
+                  >ورود به باشگاه مشتریان
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="w-14 mt-2 mr-5"
+            src="./src/images/header/logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="flex pl-4 gap-4 flex-row-reverse">
+          <img src="./src/images/gift_3695132.png" class="w-7 h-7" alt="" />
+          <a href="#"
+            ><img src="./src/images/user_12533276.png" class="w-6 h-6" alt=""
+          /></a>
+          <img src="./src/images/search_7816922.png" class="w-6 h-6" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- #endregion header-->
+    <!-- #region slider-->
+    <div class="relative [@media(min-width:1024px)]:mt-38 mt-18">
+      <div
+        class="swiper mySwiper [@media(min-width:1200px)]:w-[85%] w-[95%] rounded-2xl flex justify-center items-center"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="block w-full h-full object-cover"
+              src="./src/images/slider/pic1.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="block w-full h-full object-cover"
+              src="./src/images/slider/pic2.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="block w-full h-full object-cover"
+              src="./src/images/slider/pic3.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- #endregion slider-->
+    <!-- #region daily-sale-->
+    <div
+      class="[@media(min-width:1200px)]:h-fit h-262 [@media(min-width:1200px)]:w-[88%] [@media(min-width:1200px)]:rounded-2xl bg-[#E2E2E2] flex flex-col mt-10 p-4 mx-auto"
+    >
+      <div class="flex md:justify-between justify-center w-full h-20">
+        <div class="px-10 pt-4 flex gap-3 h-full w-full">
+          <div>
+            <img
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-9 lg:h-9"
+              src="./src/images/discount_13697213.png"
+              alt=""
+            />
+          </div>
+          <h1 class="text-[#757575] font-bold lg:text-4xl text-2xl">
+            تخفیف‌های روزانه دسترسی
+          </h1>
+        </div>
+        <div
+          id="txt"
+          class="px-10 pt-5 text-2xl text-[#757575] md:block hidden font-shabnam"
+        ></div>
+      </div>
+      <div
+        class="flex h-[75%] w-full p-7 gap-7 [@media(min-width:1200px)]:flex-row flex-col"
+      >
+        <!--product 1-->
+        <div
+          class="[@media(min-width:1200px)]:w-[30%] [@media(min-width:1200px)]:h-160 w-full h-40 flex p-4 [@media(min-width:1200px)]:flex-col flex-row bg-white rounded-xl shadow-lg hover:shadow-2xl relative"
+        >
+          <div
+            class="max-w-35 max-h-35 [@media(min-width:1200px)]:max-w-fit [@media(min-width:1200px)]:max-h-fit"
+          >
+            <img class="" src="./src/images/daily/pic1.jpg" alt="" />
+          </div>
+          <div
+            class="mt-5 flex flex-col w-full justify-around [@media(min-width:1200px)]:gap-15 gap-4"
+          >
+            <p
+              class="md:text-[16px] text-xs w-full h-18 [@media(min-width:1200px)]:line-clamp-2 leading-5 line-clamp-2"
+            >
+              شارژر رومیزی وایرلس شارژ با کابل متصل تایپ سی پاورولوژی مدل
+              Powerology PPBFT04BK
+            </p>
+            <div class="flex flex-col gap-4 relative l-0">
+              <div class="flex justify-between gap-2 w-full h-6">
+                <span class="line-through text-gray-400 font-bold text-[10px]"
+                  >3,500,000</span
+                >
+                <span class="text-red-600 font-bold text-xs"
+                  >400,000 تومان تخفیف
+                </span>
+              </div>
+              <div class="w-full flex h-8 justify-end gap-1">
+                <span class="text-blue-700 font-bold text-md">310,000</span>
+                <span class="text-gray-500 text-xs leading-6">تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--product 2-->
+        <div
+          class="[@media(min-width:1200px)]:w-[30%] [@media(min-width:1200px)]:h-160 w-full h-40 flex p-4 [@media(min-width:1200px)]:flex-col flex-row bg-white rounded-xl shadow-lg hover:shadow-2xl relative"
+        >
+          <div
+            class="max-w-35 max-h-35 [@media(min-width:1200px)]:max-w-fit [@media(min-width:1200px)]:max-h-fit"
+          >
+            <img class="" src="./src/images/daily/pic1.jpg" alt="" />
+          </div>
+          <div
+            class="mt-5 flex flex-col w-full justify-around [@media(min-width:1200px)]:gap-15 gap-4"
+          >
+            <p
+              class="md:text-[16px] text-xs w-full h-18 [@media(min-width:1200px)]:line-clamp-2 leading-5 line-clamp-2"
+            >
+              شارژر رومیزی وایرلس شارژ با کابل متصل تایپ سی پاورولوژی مدل
+              Powerology PPBFT04BK
+            </p>
+            <div class="flex flex-col gap-4 relative l-0">
+              <div class="flex justify-between gap-2 w-full h-6">
+                <span class="line-through text-gray-400 font-bold text-[10px]"
+                  >3,500,000</span
+                >
+                <span class="text-red-600 font-bold text-xs"
+                  >400,000 تومان تخفیف
+                </span>
+              </div>
+              <div class="w-full flex h-8 justify-end gap-1">
+                <span class="text-blue-700 font-bold text-md">310,000</span>
+                <span class="text-gray-500 text-xs leading-6">تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col [@media(min-width:1200px)]:w-[40%] [@media(min-width:1200px)]:h-full w-full h-40 gap-7"
+        >
+          <div
+            class="[@media(min-width:1200px)]:w-full [@media(min-width:1200px)]:h-[33%] w-full h-40 flex p-4 flex-row bg-white rounded-xl shadow-lg hover:shadow-2xl relative"
+          >
+            <div
+              class="max-w-35 max-h-35 [@media(min-width:1200px)]:max-w-fit [@media(min-width:1200px)]:max-h-fit"
+            >
+              <img class="" src="./src/images/daily/pic1.jpg" alt="" />
+            </div>
+            <div class="flex flex-col w-full justify-around mx-auto gap-4">
+              <p
+                class="md:text-[16px] text-xs w-full h-18 [@media(min-width:1200px)]:line-clamp-2 leading-6 line-clamp-2"
+              >
+                شارژر رومیزی وایرلس شارژ با کابل متصل تایپ سی پاورولوژی مدل
+                Powerology PPBFT04BK
+              </p>
+              <div class="flex flex-col gap-4 relative l-0">
+                <div class="flex justify-between gap-2 w-full h-6">
+                  <span class="line-through text-gray-400 font-bold text-[10px]"
+                    >3,500,000</span
+                  >
+                  <span class="text-red-600 font-bold text-xs"
+                    >400,000 تومان تخفیف
+                  </span>
+                </div>
+                <div class="w-full flex h-8 justify-end gap-1">
+                  <span class="text-blue-700 font-bold text-md">310,000</span>
+                  <span class="text-gray-500 text-xs leading-6">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="[@media(min-width:1200px)]:w-full [@media(min-width:1200px)]:h-[33%] w-full h-40 flex p-4 flex-row bg-white rounded-xl shadow-lg hover:shadow-2xl relative"
+          >
+            <div
+              class="max-w-35 max-h-35 [@media(min-width:1200px)]:max-w-fit [@media(min-width:1200px)]:max-h-fit"
+            >
+              <img class="" src="./src/images/daily/pic1.jpg" alt="" />
+            </div>
+            <div class="flex flex-col w-full justify-around mx-auto gap-4">
+              <p
+                class="md:text-[16px] text-xs w-full h-18 [@media(min-width:1200px)]:line-clamp-2 leading-6 line-clamp-2"
+              >
+                شارژر رومیزی وایرلس شارژ با کابل متصل تایپ سی پاورولوژی مدل
+                Powerology PPBFT04BK
+              </p>
+              <div class="flex flex-col gap-4 relative l-0">
+                <div class="flex justify-between gap-2 w-full h-6">
+                  <span class="line-through text-gray-400 font-bold text-[10px]"
+                    >3,500,000</span
+                  >
+                  <span class="text-red-600 font-bold text-xs"
+                    >400,000 تومان تخفیف
+                  </span>
+                </div>
+                <div class="w-full flex h-8 justify-end gap-1">
+                  <span class="text-blue-700 font-bold text-md">310,000</span>
+                  <span class="text-gray-500 text-xs leading-6">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="[@media(min-width:1200px)]:w-full [@media(min-width:1200px)]:h-[33%] w-full h-40 flex p-4 flex-row bg-white rounded-xl shadow-lg hover:shadow-2xl relative"
+          >
+            <div
+              class="max-w-35 max-h-35 [@media(min-width:1200px)]:max-w-fit [@media(min-width:1200px)]:max-h-fit"
+            >
+              <img class="" src="./src/images/daily/pic1.jpg" alt="" />
+            </div>
+            <div class="flex flex-col w-full justify-around mx-auto gap-4">
+              <p
+                class="md:text-[16px] text-xs w-full h-18 [@media(min-width:1200px)]:line-clamp-2 leading-6 line-clamp-2"
+              >
+                شارژر رومیزی وایرلس شارژ با کابل متصل تایپ سی پاورولوژی مدل
+                Powerology PPBFT04BK
+              </p>
+              <div class="flex flex-col gap-4 relative l-0">
+                <div class="flex justify-between gap-2 w-full h-6">
+                  <span class="line-through text-gray-400 font-bold text-[10px]"
+                    >3,500,000</span
+                  >
+                  <span class="text-red-600 font-bold text-xs"
+                    >400,000 تومان تخفیف
+                  </span>
+                </div>
+                <div class="w-full flex h-8 justify-end gap-1">
+                  <span class="text-blue-700 font-bold text-md">310,000</span>
+                  <span class="text-gray-500 text-xs leading-6">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion daily-sale-->
+    <!-- #region chosen-->
+    <div class="chosen flex justify-center items-center w-full h-80 mt-10">
+      <div class="flex w-[90%] h-full items-center flex-col">
+        <div class="flex text-[#2b2b2b] justify-center items-center h-10 w-full">
+          <h2 class="text-[#2b2b2b] font-bold lg:text-3xl md:text-2xl text-xl">
+            دسته‌بندی‌های منتخب
+          </h2>
+        </div>
+        <div class="h-50 max-w-full flex justify-around mt-5">
+          <div
+            class="swiper myChosen lg:w-[90%] md:w-[90%] w-[90%] rounded-2xl flex"
+          >
+            <div
+              class="swiper-wrapper h-40 w-full flex justify-between items-center"
+            >
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic3.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic4.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic5.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic6.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic7.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic3.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic4.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic5.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic6.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-46.25 h-46.25 object-cover"
+                  src="./src/images/swiper/pic7.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion chosen-->
+    <!-- #region available-->
+    <div class="w-full lg:h-130 h-110 ml-4 mb-10 flex justify-center">
+      <div
+        class="[@media(min-width:1150px)]:w-287.5 relative md:h-full h-fit w-full bg-[#E2E2E2] flex flex-col mt-10 [@media(min-width:1150px)]:rounded-2xl md:px-12 px-4 pb-4 justify-center"
+      >
+        <div
+          class="flex h-21 mb-4 w-full justify-between relative pt-6 md:pb-6 pb-2 mt-3"
+        >
+          <span
+            class="text-[#757575] font-bold absolute top-5 lg:text-2xl text-xl flex items-center gap-3"
+          >
+            همین الان موجود شد...
+          </span>
+          <a
+            href="#"
+            class="text-[#5f5f5f] absolute left-0 md:block lg:text-[15px] md:text-[13px] hidden"
+            >مشاهده همه محصولات
+            <i class="fa fa-caret-square-o-left mr-2" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="md:h-129 pb-4 max-w-full flex justify-around">
+          <div class="swiper myAvailable rounded-2xl flex">
+            <div class="swiper-wrapper flex justify-between items-center">
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic1.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic2.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic3.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic4.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic5.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic6.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic1.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic2.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic3.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic4.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic5.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic6.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion available-->
+    <!-- #region why-->
+    <div class="why md:h-fit mt-2 w-full flex justify-center">
+      <div
+        class="mb-8 ml-11 mr-11 p-4 md:flex hidden justify-center w-[90%] flex-col"
+      >
+        <h3
+          class="w-full flex justify-center h-9 text-[24px] mb-8 text-[#000000DE] font-bold mx-auto"
+        >
+          چرا دسترسی رو برای خرید انتخاب کنیم؟
+        </h3>
+        <div class="grid grid-cols-4 grid-rows-1">
+          <div class="flex justify-center flex-col p-4">
+            <img
+              class="w-16 h-16 mb-2 mx-auto"
+              src="./src/images/why/pic1.png"
+              alt=""
+            />
+            <p class="text-center font-bold text-gray-500 mb-2">
+              مشاوره تخصصی برای خرید محصول
+            </p>
+            <p class="text-sm text-center text-black leading-7">
+              برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب
+              رو انجام دهید.
+            </p>
+          </div>
+          <div class="flex justify-center flex-col p-4">
+            <img
+              class="w-16 h-16 mb-2 mx-auto"
+              src="./src/images/why/pic2.png"
+              alt=""
+            />
+            <p class="text-center font-bold text-gray-500 mb-2">
+              قیمت مناسب با بالاترین کیفیت
+            </p>
+            <p class="text-sm text-center text-black leading-7">
+              گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به
+              دست شما برساند.
+            </p>
+          </div>
+          <div class="flex justify-center flex-col p-4">
+            <img
+              class="w-16 h-16 mb-2 mx-auto"
+              src="./src/images/why/pic3.png"
+              alt=""
+            />
+            <p class="text-center font-bold text-gray-500 mb-2">ارسال سریع</p>
+            <p class="text-sm text-center text-black leading-7">
+              ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می
+              گیرد.
+            </p>
+          </div>
+          <div class="flex justify-center flex-col p-4">
+            <img
+              class="w-16 h-16 mb-2 mx-auto"
+              src="./src/images/why/pic4.png"
+              alt=""
+            />
+            <p class="text-center font-bold text-gray-500 mb-2">
+              امکان خرید حضوری
+            </p>
+            <p class="text-sm text-center text-black leading-7">
+              مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت
+              مراجعه نمایید.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion why-->
+    <!-- #region available-->
+    <div class="w-full lg:h-130 h-110 ml-4 mb-30 mt-10 flex justify-center">
+      <div
+        class="[@media(min-width:1150px)]:w-287.5 relative md:h-full h-fit w-full bg-[#E2E2E2] flex flex-col mt-10 [@media(min-width:1150px)]:rounded-2xl md:px-12 px-4 pb-4 justify-center"
+      >
+        <div
+          class="flex h-21 mb-4 w-full justify-between relative pt-6 md:pb-6 pb-2 mt-3"
+        >
+          <span
+            class="text-[#757575] font-bold absolute top-5 lg:text-2xl text-xl flex items-center gap-3"
+          >
+            همین الان موجود شد...
+          </span>
+          <a
+            href="#"
+            class="text-[#5f5f5f] absolute left-0 md:block lg:text-[15px] md:text-[13px] hidden"
+            >مشاهده همه محصولات
+            <i class="fa fa-caret-square-o-left mr-2" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="md:h-129 pb-4 max-w-full flex justify-around">
+          <div class="swiper myAvailable rounded-2xl flex">
+            <div class="swiper-wrapper flex justify-between items-center">
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic1.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic2.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic3.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic4.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic5.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic6.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic1.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic2.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic3.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic4.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic5.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+              <div
+                class="swiper-slide shadow-md max-h-fit bg-white rounded-2xl flex"
+              >
+                <img
+                  src="./src/images/available /pic6.jpg"
+                  class="w-full mx-auto rounded-2xl"
+                  alt=""
+                />
+
+                <div
+                  class="max-w-68 max-h-17.5 p-2 flex justify-around flex-col text-center"
+                >
+                  <h6
+                    class="text-[#5b5959] opacity-50 md:flex hidden justify-center"
+                  >
+                    شارژر دیواری
+                  </h6>
+
+                  <p
+                    class="text-[#5b5959] md:text-sm text-xs line-clamp-1 leading-11 text-center hover:text-blue-800 hover:cursor-pointer"
+                  >
+                    شارژر دیواری 20 واتی به همراه کابل دوسر تایپ سی انکر مدل
+                    Anker B2348
+                  </p>
+                </div>
+                <span
+                  class="line-through block opacity-65 text-gray-500 text-[12px] text-left px-4"
+                >
+                  255,000
+                </span>
+                <span
+                  class="pb-3 px-4 flex justify-end gap-2 text-blue-800 font-bold md:text-sm text-sm text-left"
+                >
+                  199,000
+                  <h5 class="text-black font-light">تومان</h5>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion available-->
+    <!-- #region fav brands-->
+    <div class="brands w-full h-55 flex justify-center">
+      <div class="w-[87%] h-full flex flex-col">
+        <span class="text-2xl font-bold text-gray-500">محبوب ترین برندها</span>
+        <!--swipoer-->
+        <div class="swiper myBrands w-full h-40">
+          <div class="swiper-wrapper flex justify-between items-center">
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic1.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic2.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic3.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic4.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic5.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic6.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide w-48">
+              <a
+                href="#"
+                class="flex justify-center items-center flex-col rounded-xl shadow-md p-2 mt-4 mb-4 bg-white"
+              >
+                <img
+                  src="./src/images/brands/pic7.jpg"
+                  class="w-24 h-24 block object-cover"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion fav brands-->
+    <!-- #region journal-->
+    <div class="journal w-full flex justify-center mb-10">
+      <div class="flex w-[87%] pl-4 pr-4 flex-col">
+        <div class="flex justify-between w-full mb-7">
+          <span class="text-2xl text-gray-500 font-bold">آخرین مقالات</span>
+          <a href="#" class="text-[#5f5f5f] block lg:text-[15px] md:text-[13px]"
+            >ورود به بلاگ
+            <i class="fa fa-caret-square-o-left mr-2" aria-hidden="true"></i>
+          </a>
+        </div>
+        <!--swiper-->
+        <div class="swiper myJournal w-full h-fit">
+          <div class="swiper-wrapper flex justify-between items-center mb-10">
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="rounded-2xl flex shadow-md bg-white mb-2 hover:text-blue-700"
+                href="#"
+              >
+                <div class="flex flex-col">
+                  <img
+                    class="rounded-xl mb-2 mx-auto w-auto"
+                    src="./src/images/journal/pic1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col justify-around flex-1 text-center overflow-hidden"
+                  >
+                    <h3
+                      class="leading-7 text-[10px] md:text-sm lg:text-sm lg:line-clamp-none md:line-clamp-2 line-clamp-1 overflow-hidden h-16 px-4 flex items-center justify-center"
+                    >
+                      <span
+                        >تفاوت شارژر تایپ سی و معمولی چیست؟ بررسی از سرعت تا
+                        عمر...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion journal-->
+
+    <!-- #region help-->
+
+    <input type="checkbox" id="chat-toggle" class="hidden peer" />
+    <label
+      for="chat-toggle"
+      class="icon w-25 h-25 flex fixed right-2 -bottom-6 cursor-pointer z-50"
+    >
+      <div
+        class="w-14 h-14 bg-[#3F51B5] rounded-2xl hover:scale-115 duration-300 flex justify-center items-center"
+      >
+        <img
+          class="bg-white rounded-4xl w-9 h-9"
+          src="./src/images/messenger.png"
+          alt=""
+        />
+      </div>
+    </label>
+    <!-- Overlay: clicking closes chat -->
+    <label
+      for="chat-toggle"
+      class="fixed inset-0 bg-opacity-30 z-40 hidden peer-checked:block cursor-pointer"
+    ></label>
+    <div
+      class="chat w-90 h-[94%] rounded-2xl hidden peer-checked:block fixed right-0 top-4 bg-white z-50 shadow-md"
+    >
+      <div class="h-full w-full flex flex-col justify-between">
+        <div class="flex flex-col">
+          <div
+            class="h-16 w-full bg-[#3F51B5] rounded-t-2xl flex items-center gap-3"
+          >
+            <img
+              class="w-8 h-8 rounded-4xl mr-4"
+              src="./src/images/help/pic1.webp"
+              alt=""
+            />
+            <div class="flex flex-col">
+              <span class="text-white text-[13.5px]"
+                >سیستم مشاوره و پشتیبانی آنلاین دسترسی</span
+              >
+              <span class="text-white text-[11.5px]">www.dastresi.com</span>
+            </div>
+          </div>
+          <div
+            class="h-5 w-full bg-[#F7F8FA] flex justify-center items-center gap-1"
+          >
+            <span class="text-[10px] text-[#757575] ml-3"
+              >قدرت گرفته از رایچت
+            </span>
+            <span class="text-[10px] text-[#757575] hover:text-[#0B5ABD]">
+              raychat</span
+            >
+            <img
+              class="w-4 h-4 opacity-50 hover:opacity-100"
+              src="./src/images/help/download.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="text w-full h-18 p-4 flex">
+          <div
+            class="flex w-68 h-12 p-2 rounded-2xl leading-8 border border-gray-400 justify-between"
+          >
+            <textarea
+              name="text"
+              class=" "
+              style="resize: none; border: none; outline: none; font-size: 13px"
+              placeholder="اینجا تایپ کنید ..."
+            ></textarea>
+            <div class="styles_emoji_sender_wrapper__WzTb6">
+              <button data-show-icons="false">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-smile styles_emoji_input_icon__pvDnR"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" x2="9.01" y1="9" y2="9"></line>
+                  <line x1="15" x2="15.01" y1="9" y2="9"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="ارسال"
+            class="w-16 h-12 bg-[#3F51B5] text-white rounded-2xl mr-4 cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion help-->
+
+    <!-- #region footer-->
+    <footer class="h-fit w-full flex flex-col">
+      <div
+        class="lg:h-23 h-fit w-full bg-[#E2E2E2] flex justify-start flex-col md:flex-row"
+      >
+        <div
+          class="lg:mx-16 w-full h-full p-6 flex flex-col lg:flex-row lg:justify-around justify-between items-center lg:gap-8"
+        >
+          <div class="flex items-center mb-4 lg:mb-0">
+            <span class="flex gap-2 items-center text-gray-500 text-xs">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>021-33902646</span>
+            </span>
+          </div>
+          <div class="flex items-center mb-4 lg:mb-0">
+            <span class="flex gap-2 items-center text-gray-500 text-xs">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <span
+                >شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10
+                صبح الی ساعت 16</span
+              >
+            </span>
+          </div>
+          <div class="flex items-center mb-4 lg:mb-0">
+            <span class="flex gap-2 items-center text-gray-500 text-xs">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه
+                بدیع</span
+              >
+            </span>
+          </div>
+          <div
+            class="lg:flex hidden lg:text-center text-start w-24 h-11 bg-[#FAFAFA] shadow-md rounded-xl items-center"
+          >
+            <a href="#top">
+              <div
+                class="flex justify-between gap-2 items-center text-gray-500 text-xs"
+              >
+                <span class="mr-2">برو بالا</span>
+                <i class="fa fa-angle-up mr-7" aria-hidden="true"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-fit w-full bg-[#F5F5F5] flex p-4 lg:flex-row flex-col gap-5 lg:gap-y-0 gap-y-10"
+      >
+        <div
+          class="lg:w-[20%] lg:mx-0 mx-auto h-full flex flex-col my-auto gap-4"
+        >
+          <img
+            class="w-47 pt-4 mx-auto"
+            src="./src/images/footer/logo.png"
+            alt=""
+          />
+          <div class="flex gap-3 justify-between mx-4">
+            <span class="text-sm">با ما در ارتباط باشید:</span>
+            <img
+              class="ml-3 w-7 h-7"
+              src="./src/images/footer/insta.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="lg:w-[50%] h-full flex flex-col">
+          <span class="font-bold text-xl text-black-87 lg:mx-0 mx-auto mb-4"
+            >فروشگاه اینترنتی دسترسی</span
+          >
+          <p class="text-gray-500 leading-7">
+            فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در
+            حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398
+            از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای
+            اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از
+            مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به
+            فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب
+            صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه
+            آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست،
+            لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده
+            دیجیتال و هزاران گجت جذاب ادامه میدهد.
+          </p>
+        </div>
+        <div class="lg:w-[15%] h-full flex flex-col gap-3">
+          <span class="font-bold text-xl text-black-87 mb-4 lg:mx-0 mx-auto"
+            >دسترسی سریع</span
+          >
+          <div class="text-gray-500 leading-7 flex flex-col gap-3">
+            <a href="#">باشگاه مشتریان</a>
+            <a href="#">سوالات متداول</a>
+            <a href="#">بلاگ</a>
+            <a href="#">شرایط و قوانین</a>
+            <a href="#">ارتباط ما</a>
+            <a href="#">درباره ما</a>
+          </div>
+        </div>
+        <div class="lg:w-[15%] lg:mx-0 mx-auto h-full my-auto">
+          <img src="./src/images/footer/pic1.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="h-11 w-full bg-[#0B5ABD] text-white text-sm text-center leading-10"
+      >
+        تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
+      </div>
+    </footer>
+    <!-- #endregion footer-->
+
+    <!-- Swiper JS -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
+
+
+  </body>
+</html>
