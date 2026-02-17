@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/images/icon/favicon3.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <title>ورود</title>
+  </head>
+  <body onload="startTime()" class="max-w-360 mx-auto bg-[#FAFAFA]">
+    <div
+      class="grid h-160 grid-cols-1 content-center justify-items-center gap-4"
+    >
+      <div class="bg-[#ededed] w-90 h-110 rounded-xl shadow-sm">
+        <div
+          class="top h-[30%] w-full flex flex-col border-b-gray-300 border-b relative"
+        >
+          <a href="./index.html" class="w-full h-10 pr-81"
+            ><i class="fa fa-times p-3" aria-hidden="true"></i
+          ></a>
+          <img
+            class="w-40 h-17 mx-auto"
+            src="./src/images/header/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="h-78 w-full p-6 flex flex-col">
+          <h1 class="font-bold mb-5">ورود و ثبت‌نام در سایت</h1>
+          <p class="text-[14px] leading-7 mb-7">
+            برای ورود و یا ثبت‌نام در سایت، لطفا شماره موبایل خود را وارد
+            نمایید.
+          </p>
+
+          <form
+            class="flex flex-col"
+            id="login-form"
+            action="/login"
+            method="post"
+          >
+            <div class="relative z-0 mb-4 w-full group bg-transparent">
+              <input
+                class="peer input-check block py-1 p-2 w-full text-gray-800 bg-white border border-gray-300 focus:outline-none focus:border-color rounded-xl"
+                id="key"
+                name="key"
+                type="text"
+                placeholder=" "
+              />
+
+              <label
+                id="key-lable"
+                for="key"
+                class="lable-check absolute px-2 text-sm text-gray-500 duration-300 scale-75 top-3 transform -translate-y-6 origin-[100] peer-focus:font-medium peer-focus:right-0 peer-focus:text-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:top-1 peer-focus:p-0 leading-3"
+                >شماره موبایل</label
+              >
+            </div>
+
+            <span
+              id="btn"
+              onclick="submitform()"
+              class="cursor-pointer block w-full rounded-xl bg-color text-white font-medium text-center text-sm py-2 px-8 mb-4 mt-5 opacity-50 bg-[#0B5ABD]"
+              >ورود به سایت</span
+            >
+          </form>
+
+          <p class="text-[13px] mx-auto">ورود شما به معنای پذیرش<i class="text-[#0B5ABD]"> شرایط و قوانین</i> سایت است.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
