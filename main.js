@@ -1,9 +1,3 @@
-import Swiper from "swiper";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 
 
 let search = document.querySelector(".header-search-input");
